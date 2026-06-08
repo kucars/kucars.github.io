@@ -1,0 +1,84 @@
+---
+layout: default
+---
+{% assign theme_data = site.data.research.themes | where: "slug", page.theme_slug | first %}
+{% assign theme_projects = site.projects | where: "theme", page.theme_slug %}
+{% assign active_projects = theme_projects | where_exp: "item", "item.type != 'partnership'" %}
+{% assign project_count = active_projects.size %}
+
+<header class="page-hero page-hero--research{% if theme_data.hero_image %} page-hero--research-has-image{% endif %}">
+  {% if theme_data.hero_image %}
+    <img
+      class="page-hero__bg"
+      src="{{ theme_data.hero_image | relative_url }}"
+      alt=""
+      loading="eager"
+      decoding="async"
+      data-upscale-blur
+      data-blur-factor="4"
+      data-blur-max="7"
+      data-scale-factor="0.014"
+    >
+  {% endif %}
+  <div class="wrap page-hero__inner">
+    {% include research-breadcrumb.html theme=page.theme_slug %}
+    <p class="eyebrow">{{ theme_data.short_title }}</p>
+    <h1>{{ theme_data.title }}</h1>
+    <p>{{ theme_data.description }}</p>
+    <p class="research-meta-count">{{ project_count }} research projects</p>
+  </div>
+</header>
+
+<article class="section wrap">
+  {% if theme_data.focus_areas and theme_data.focus_areas.size > 0 %}
+    <section class="research-section">
+      <h2>{{ theme_data.focus_title | default: "Research Focus" }}</h2>
+      {% if theme_data.focus_intro %}
+        <p class="research-focus-intro">{{ theme_data.focus_intro }}</p>
+      {% endif %}
+      <ul class="research-focus">
+        {% for area in theme_data.focus_areas %}
+          <li><strong>{{ area.title }}:</strong> {{ area.description }}</li>
+        {% endfor %}
+      </ul>
+    </section>
+  {% elsif theme_data.questions and theme_data.questions.size > 0 %}
+    <section class="research-section">
+      <h2>{{ theme_data.questions_title | default: "Research Questions" }}</h2>
+      <ul class="research-questions">
+        {% for question in theme_data.questions %}
+          <li>{{ question }}</li>
+        {% endfor %}
+      </ul>
+    </section>
+  {% endif %}
+
+  {% if content != "" %}
+    <section class="research-section prose">
+      {{ content }}
+    </section>
+  {% endif %}
+
+  <section class="research-section">
+    <h2>Projects</h2>
+    {% include research-project-grid.html theme_slug=page.theme_slug %}
+  </section>
+
+  {% assign partnerships = theme_projects | where: "type", "partnership" %}
+  {% if partnerships.size > 0 %}
+    <section class="research-section">
+      <h2>Partnerships</h2>
+      <div class="project-grid project-grid--compact">
+        {% for project in partnerships %}
+          <article class="project-card">
+            <div class="project-card__body">
+              <h3><a href="{{ project.url | relative_url }}">{{ project.title }}</a></h3>
+              <p class="project-card__summary">{{ project.summary }}</p>
+              <a class="project-card__link" href="{{ project.url | relative_url }}">Learn more</a>
+            </div>
+          </article>
+        {% endfor %}
+      </div>
+    </section>
+  {% endif %}
+</article>

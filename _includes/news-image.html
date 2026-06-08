@@ -1,0 +1,11 @@
+{% assign news_image = include.image | default: site.data.center.news_default_image %}
+{% assign news_alt = include.alt | default: "KUCARS robotics research" %}
+{% if include.link %}
+  <a class="news-card__image{% unless include.image %} news-card__image--default{% endunless %}" href="{{ include.link | relative_url }}">
+    <img src="{{ news_image | relative_url }}" alt="{{ news_alt }}" loading="lazy">
+  </a>
+{% else %}
+  <figure class="article-figure{% unless include.image %} article-figure--default{% endunless %}">
+    <img src="{{ news_image | relative_url }}" alt="{{ news_alt }}" loading="lazy">
+  </figure>
+{% endif %}

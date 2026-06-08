@@ -1,0 +1,276 @@
+leadership:
+  title: Center Leadership
+  people:
+    - name: Prof. Jorge Dias
+      profile: https://www.ku.ac.ae/college-people/jorge-dias
+      role: Professor and Director
+      unit: Computer Communication Engineering
+    - name: Dr. Irfan Hussain
+      profile: https://www.ku.ac.ae/college-people/irfan-hussain
+      role: Associate Professor and Deputy Director
+      unit: Mechanical and Nuclear Engineering
+faculty:
+  title: Faculty
+  people:
+    - name: Prof. Naoufel Werghi
+      profile: https://www.ku.ac.ae/college-people/naoufel-werghi
+      role: Professor
+      unit: Computer Science
+    - name: Prof. Igor Boiko
+      profile: https://www.ku.ac.ae/college-people/igor-boiko
+      role: Professor
+      unit: Electrical Engineering
+    - name: Prof. Yahya Zweiri
+      profile: https://www.ku.ac.ae/college-people/yahya-zweiri
+      role: Professor and Senior Director
+      unit: Aerospace Engineering
+    - name: Dr. Federico Renda
+      profile: https://www.ku.ac.ae/college-people/federico-renda
+      role: Associate Professor
+      unit: Mechanical and Nuclear Engineering
+    - name: Dr. Hamad Karki
+      profile: https://www.ku.ac.ae/college-people/hamad-karki
+      role: Associate Professor
+      unit: Mechanical and Nuclear Engineering
+    - name: Dr. Julian Barreiro-Gomez
+      profile: https://www.ku.ac.ae/college-people/julian-barreiro-gomez
+      role: Assistant Professor
+      unit: Computer Communication Engineering
+    - name: Dr. Majid Khonji
+      profile: https://www.ku.ac.ae/college-people/majid-khonji
+      role: Associate Professor
+      unit: Computer Science
+    - name: Dr. Sajid Javed
+      profile: https://www.ku.ac.ae/college-people/sajid-javed
+      role: Assistant Professor
+      unit: Computer Science
+    - name: Prof. Bashar El Khasawneh
+      profile: https://www.ku.ac.ae/college-people/bashar-el-khasawneh
+      role: Professor of Practice
+      unit: Mechanical and Nuclear Engineering
+researchers:
+  title: Researchers
+  people:
+    - name: Dr. Abdur Patrum
+      profile: https://www.ku.ac.ae/college-people/abdur-rosyid-patrum
+      role: Research Scientist
+    - name: Dr. Anup Teejo Mathew
+      profile: https://www.ku.ac.ae/college-people/anup-teejo-mathew
+      role: Research Scientist
+    - name: Saverio Iacoponi
+      profile: https://www.ku.ac.ae/college-people/saverio-iacoponi
+      role: Postdoctoral Fellow
+    - name: Rana Azzam
+      profile: https://www.ku.ac.ae/college-people/rana-azzam
+      role: Postdoctoral Fellow
+    - name: Dr. Daniel Felix
+      profile: https://www.ku.ac.ae/college-people/dr-daniel-felix
+      role: Postdoctoral Fellow
+    - name: Muhayyuddin Ahmed
+      profile: https://www.ku.ac.ae/college-people/muhayyuddin-ahmed
+      role: Postdoctoral Fellow
+    - name: Waseem Akram
+      profile: https://www.ku.ac.ae/college-people/waseem-akram
+      role: Postdoctoral Fellow
+    - name: Dr. Lochan Kshetrimayum
+      profile: https://www.ku.ac.ae/college-people/kshetrimayum-lochan
+      role: Postdoctoral Fellow
+    - name: Lyes Saad Saoud
+      profile: https://www.ku.ac.ae/college-people/lyes-saad-saoud
+      role: Postdoctoral Fellow
+    - name: Asim Khan
+      profile: https://www.ku.ac.ae/college-people/asim-khan
+      role: Postdoctoral Fellow
+    - name: Dr. Mobeen Rehman
+      profile: https://www.ku.ac.ae/college-people/mobeen-ur-rehman
+      role: Postdoctoral Fellow
+    - name: Jacob George
+      profile: https://www.ku.ac.ae/college-people/mr-jacob-george
+      role: Lab Engineer
+    - name: Arjun Sharma
+      profile: https://www.ku.ac.ae/college-people/arjun-sharma
+      role: Research Engineer
+    - name: Mr. Mohamad Chehadeh
+      profile: https://www.ku.ac.ae/college-people/mohamad-chehadeh
+      role: Research Engineer
+    - name: Laith AbuAssi
+      profile: https://www.ku.ac.ae/college-people/laith-abuassi
+      role: Research Engineer
+    - name: Ms. Basma Hasanen
+      profile: https://www.ku.ac.ae/college-people/basma-hasanen
+      role: Research Associate
+    - name: Mr. Ahsan Bakht
+      profile: https://www.ku.ac.ae/college-people/ahsan-baidar-bakht
+      role: Research Associate
+students:
+  title: Students
+  people:
+    - name: Fatima Adnan Mohamed Jasim Kashwani
+      profile: https://www.ku.ac.ae/college-people/fatima-adnan-mohamed-jasim-kashwani
+      role: Graduate Student, MSc
+    - name: Ahmad Abubaker
+      profile: https://www.ku.ac.ae/college-people/ahmad-abubaker
+      role: Graduate Student, PhD Engineering
+    - name: Yusuf Adamu
+      profile: https://www.ku.ac.ae/college-people/yusuf-adamu
+      role: Graduate Student, PhD Engineering
+    - name: Ismail Alali
+      profile: https://www.ku.ac.ae/college-people/ismail-alali
+      role: Graduate Student, PhD Engineering
+    - name: Mohammed Ali
+      profile: https://www.ku.ac.ae/college-people/mohammed-ahmed-ali
+      role: Doctor of Philosophy Research and Teaching
+    - name: Ruqayya Alhammadi
+      profile: https://www.ku.ac.ae/college-people/ruqayya-alhammadi
+      role: Graduate Student, PhD Engineering
+    - name: Abdulaziz Alkayas
+      profile: https://www.ku.ac.ae/college-people/abdulaziz-alkayas
+      role: Graduate Student, PhD Engineering
+    - name: Vidya Sudevan Cherukat
+      profile: https://www.ku.ac.ae/college-people/vidya-sudevan-cherukat
+      role: Graduate Student, PhD Engineering
+    - name: Abdel Gafoor Haddad
+      profile: https://www.ku.ac.ae/college-people/abdel-gafoor-haddad
+      role: Graduate Student, PhD Engineering
+    - name: Ousamma Hay
+      profile: https://www.ku.ac.ae/college-people/ousamma-hay
+      role: Graduate Student, PhD Engineering
+    - name: Xiaoqian Huang
+      profile: https://www.ku.ac.ae/college-people/xiaoqian-huang
+      role: Graduate Student, PhD Engineering
+    - name: Jing Li
+      profile: https://www.ku.ac.ae/college-people/jing-li
+      role: Graduate Student, PhD Engineering
+    - name: Mubarak Yakubu
+      profile: https://www.ku.ac.ae/college-people/mubarak-yakubu
+      role: Graduate Student, PhD Engineering
+    - name: Binzhao Xu
+      profile: https://www.ku.ac.ae/college-people/binzhao-xu
+      role: Graduate Student, PhD Engineering
+    - name: Abdelfatah Hassan Ahmed
+      profile: https://www.ku.ac.ae/college-people/abdelfatah-hassan-ahmed
+      role: Graduate Student, MSc
+    - name: Aysha Ali Samra Al Shehhi
+      profile: https://www.ku.ac.ae/college-people/aysha-ali-samra-al-shehhi
+      role: Graduate Student, MSc
+    - name: Basit Alawode
+      profile: https://www.ku.ac.ae/college-people/basit-alawode
+      role: Graduate Student, MSc
+    - name: Muaz Khalifa Alradi
+      profile: https://www.ku.ac.ae/college-people/muaz-khalifa-alradi
+      role: Graduate Student, MSc
+    - name: Awet Mekonen Araia
+      profile: https://www.ku.ac.ae/college-people/awet-mekonen-araia
+      role: Graduate Student, MSc
+    - name: Mustofa Basri
+      profile: https://www.ku.ac.ae/college-people/mustofa-basri
+      role: Graduate Student, MSc
+    - name: Abderrahmene Boudiaf
+      profile: https://www.ku.ac.ae/college-people/abderrahmene-boudiaf
+      role: Graduate Student, MSc
+    - name: Mohamed Moustafa Elhanbaly
+      profile: https://www.ku.ac.ae/college-people/mohamed-moustafa-elhanbaly
+      role: Graduate Student, MSc
+    - name: Mahmoud Said Elmezain
+      profile: https://www.ku.ac.ae/college-people/mahmoud-said-elmezain
+      role: Graduate Student, MSc
+    - name: Abiel Fishatsion Ghebreslasie
+      profile: https://www.ku.ac.ae/college-people/abiel-fishatsion-ghebreslasie
+      role: Graduate Student, MSc
+    - name: Adarsh Ghimire
+      profile: https://www.ku.ac.ae/college-people/adarsh-ghimire
+      role: Graduate Student, MSc
+    - name: Yuhang Guo
+      profile: https://www.ku.ac.ae/college-people/yuhang-guo
+      role: Graduate Student, MSc
+    - name: Taslim Mahbub
+      profile: https://www.ku.ac.ae/college-people/taslim-mahbub
+      role: Graduate Student, MSc
+    - name: Murad Smreteab Mebrahtu
+      profile: https://www.ku.ac.ae/college-people/murad-smreteab-mebrahtu
+      role: Graduate Student, MSc
+    - name: Ahmed Obeid
+      profile: https://www.ku.ac.ae/college-people/ahmed-obeid
+      role: Graduate Student, MSc
+    - name: Anees Basheer Peringal
+      profile: https://www.ku.ac.ae/college-people/anees-basheer-peringal
+      role: Graduate Student, MSc
+    - name: Hamed Assem Toubar
+      profile: https://www.ku.ac.ae/college-people/hamed-assem-toubar
+      role: Graduate Student, MSc
+    - name: Mehnaz Ummar
+      profile: https://www.ku.ac.ae/college-people/mehnaz-ummar
+      role: Graduate Student, MSc
+    - name: Mohammed Walid Salah
+      profile: https://www.ku.ac.ae/college-people/mohammed-walid-salah
+      role: Graduate Student, MSc
+advisory_committee:
+  title: Advisory Committee
+  people:
+    - name: Dr. Shamal Abdulkhaliq Mohammed
+      profile: https://www.ku.ac.ae/college-people/dr-shamal-abdulkhaliq-mohammed
+      role: Director AgriTech and R&D
+      unit: Silal
+    - name: Dr. Abdelqader Abusafieh
+      profile: https://www.ku.ac.ae/college-people/dr-abdelqader-abusafieh
+      role: Head of Technology
+      unit: Strata, Mubadala
+    - name: Dr. Aamer Alshehi
+      profile: https://www.ku.ac.ae/college-people/dr-aamer-alshehi
+      role: Head of Forensic Units
+      unit: Abu Dhabi Police
+    - name: Dr. Mohamed Jama Mohamed
+      profile: https://www.ku.ac.ae/college-people/dr-mohamed-jama-mohamed
+      role: Transportation Mobility Specialist
+      unit: ITC, Abu Dhabi DMT
+    - name: Prof. Paolo Dario
+      profile: https://www.ku.ac.ae/academics/college-of-engineering/department/department-of-biomedical-engineering/research-activities/biorobotics/people/prof-paolo-dario
+      role: Professor
+      unit: DFF and SSSA
+    - name: Prof. Hatem Zein El Din
+      profile: https://www.ku.ac.ae/college-people/hatem-zein-el-din
+      role: Professor and Chair
+      unit: Electrical Engineering and Computer Science
+    - name: Ousama Khatib
+      profile: https://www.ku.ac.ae/college-people/ousama-khatib
+      role: Professor
+      unit: Stanford University
+    - name: Prof. Sean Swei
+      profile: https://www.ku.ac.ae/college-people/sean-swei
+      role: Professor of Practice
+      unit: Aerospace Engineering
+    - name: Dr. Dimitrios Kyritsis
+      profile: https://www.ku.ac.ae/college-people/dimitrios-kyritsis
+      role: Faculty
+      unit: Mechanical and Nuclear Engineering
+    - name: Dr. Nawaf Al Moosa
+      profile: https://www.ku.ac.ae/college-people/nawaf-al-moosa
+      role: Assistant Professor and EBTIC Director
+      unit: Computer Communication Engineering
+alumni:
+  title: Alumni and Former Staff
+  people:
+    - name: Guowei Cai
+      profile: https://www.ku.ac.ae/college-people/guowei-cai
+      role: Assistant Professor
+    - name: Dr. Dongming Gan
+      profile: https://www.ku.ac.ae/academics/college-of-engineering/department/department-of-mechanical-engineering/people/dr-dongming-gan
+      role: Assistant Professor
+    - name: Tarek Taha
+      profile: https://www.ku.ac.ae/college-people/tarek-taha
+      role: Postdoctoral Fellow
+    - name: Shafiqul Islam
+      profile: https://www.ku.ac.ae/college-people/shafiqul-islam
+      role: Postdoctoral Fellow
+    - name: Dr. Mohammad Faraz
+      profile: https://www.ku.ac.ae/college-people/mohammad-faraz
+      role: Research Scientist
+    - name: Dr. Rajkumar Muthuswamy
+      profile: https://www.ku.ac.ae/college-people/dr-rajkumar-muthuswamy
+      role: Postdoctoral Fellow
+    - name: Costanza Armanini
+      profile: https://www.ku.ac.ae/college-people/dr-costanza-armanini
+      role: Adjunct Faculty
+    - name: Dr. Mohammed Boushaki
+      profile: https://www.ku.ac.ae/college-people/dr-mohammed-boushaki
+      role: Postdoctoral Fellow

@@ -1,0 +1,36 @@
+- name: Marine Robotics
+  location: D00058
+  theme: Theme 3 Lab
+  research_theme: marine-robotics
+  description: Marine Studies and Research Lab with wave generation, flow current, and controlled underwater testing for autonomous marine systems.
+  image: /assets/images/research/marine-robotics/marine-lab-hero.jpg
+- name: Autonomous Cars
+  location: B02033 Main Campus and KU SAN Campus Wind Tunnel Building 
+  theme: Theme 1 Lab
+  research_theme: autonomous-vehicles
+  description: Autonomous vehicle platforms for campus mobility and integrated autonomy experiments.
+  image: /assets/images/research/autonomous-vehicles/avlab-msap-hero.png
+- name: Computer Vision
+  location: L03029
+  theme: Theme 1 Lab
+  research_theme: autonomous-vehicles
+  description: Vision and perception research supporting robotic autonomy and inspection.
+  image: /assets/images/facilities/computer-vision.png
+- name: Aerial Robotics
+  location: Outdoor area and C00060 indoor lab
+  theme: Theme 2 Lab
+  research_theme: aerial-robotics
+  description: UAV experimentation, testing, and validation for aerial autonomy.
+  image: /assets/images/research/aerial-robotics/aerial-robotics-hero.png
+- name: Lab Manufacturing Robotics
+  location: ARIC Labs
+  theme: Theme 4 Lab
+  research_theme: industrial-robotics
+  description: Manufacturing robotics environment for industrial automation and manipulation.
+  image: /assets/images/facilities/lab-manufacturing-robotics.png
+- name: Industrial Robotics
+  location: L010129
+  theme: Theme 4 Lab
+  research_theme: industrial-robotics
+  description: Industrial robotics laboratory for robotic manipulation and applied automation.
+  image: /assets/images/research/industrial-robotics/industrial-robotics-hero.png

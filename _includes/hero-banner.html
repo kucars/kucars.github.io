@@ -1,0 +1,37 @@
+{% assign banners = site.data.banners %}
+{% assign default_banner = banners | first %}
+<img
+  class="hero__image"
+  id="hero-banner"
+  data-upscale-blur
+  data-blur-factor="3"
+  data-blur-max="6"
+  data-scale-factor="0.012"
+  src="{{ default_banner.image | relative_url }}"
+  alt="{{ default_banner.alt }}"
+  decoding="async"
+  fetchpriority="high"
+>
+<script>
+(function () {
+  var banners = [
+    {% for banner in banners %}
+    {
+      src: {{ banner.image | relative_url | jsonify }},
+      alt: {{ banner.alt | jsonify }}
+    }{% unless forloop.last %},{% endunless %}
+    {% endfor %}
+  ];
+
+  var img = document.getElementById("hero-banner");
+  if (!img || !banners.length) return;
+
+  var pick = banners[Math.floor(Math.random() * banners.length)];
+  img.src = pick.src;
+  img.alt = pick.alt;
+
+  if (window.KucarsUpscaleBlur) {
+    window.KucarsUpscaleBlur.bind(img);
+  }
+})();
+</script>

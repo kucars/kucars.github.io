@@ -1,0 +1,25 @@
+{% if site.data.research.collaborators %}
+<section class="research-section research-network">
+  <h2>Research Network</h2>
+  {% if site.data.research.collaborators.external_collaborators %}
+    <div class="research-network__group">
+      <h3>External Collaborators</h3>
+      <div class="research-chips">
+        {% for name in site.data.research.collaborators.external_collaborators %}
+          <span class="research-chip">{{ name }}</span>
+        {% endfor %}
+      </div>
+    </div>
+  {% endif %}
+  {% if site.data.research.collaborators.external_sponsors %}
+    <div class="research-network__group">
+      <h3>External Sponsors</h3>
+      <div class="research-chips">
+        {% for name in site.data.research.collaborators.external_sponsors %}
+          <span class="research-chip">{{ name }}</span>
+        {% endfor %}
+      </div>
+    </div>
+  {% endif %}
+</section>
+{% endif %}

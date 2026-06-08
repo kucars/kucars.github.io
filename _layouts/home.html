@@ -1,0 +1,79 @@
+---
+layout: default
+---
+
+{% assign center = site.data.center %}
+
+<section class="hero">
+  {% include hero-banner.html %}
+  {% assign title_words = center.name | split: ' ' %}
+  <div class="hero__content wrap" style="--word-count: {{ title_words.size }}">
+    <p class="eyebrow hero__reveal">{{ center.kicker }}</p>
+    <h1 class="hero__title" aria-label="{{ center.name }}">
+      {% for word in title_words %}
+        <span class="hero__word" style="--word-index: {{ forloop.index0 }}">{{ word }}</span>
+      {% endfor %}
+    </h1>
+    <p class="hero__summary hero__reveal">{{ center.summary }}</p>
+    <div class="hero__actions hero__reveal">
+      <a class="button button--primary" href="{{ '/research/' | relative_url }}">Explore Research</a>
+      <a class="button button--light" href="{{ '/people/' | relative_url }}">Meet the Team</a>
+    </div>
+  </div>
+</section>
+
+<section class="band band--compact">
+  <div class="wrap metrics">
+    {% for item in center.metrics %}
+      <div class="metric">
+        <strong>{{ item.value }}</strong>
+        <span>{{ item.label }}</span>
+      </div>
+    {% endfor %}
+  </div>
+</section>
+
+<section class="section wrap two-column">
+  <div>
+    <p class="section-kicker">{{ center.research_direction.kicker }}</p>
+    <h2>{{ center.research_direction.heading }}</h2>
+  </div>
+  <div class="prose">
+    <p>{{ center.research_direction.body }}</p>
+  </div>
+</section>
+
+<section class="section section--tint">
+  <div class="wrap">
+    <div class="section-heading">
+      <p class="section-kicker">Themes</p>
+      <h2>Embodied AI Platforms</h2>
+    </div>
+    {% include research-themes.html compact=true %}
+  </div>
+</section>
+
+<section class="section wrap">
+  <div class="split-feature">
+    <img src="{{ center.facility_image | relative_url }}" alt="KUCARS laboratory facility">
+    <div>
+      <p class="section-kicker">{{ center.facilities_teaser.kicker }}</p>
+      <h2>{{ center.facilities_teaser.heading }}</h2>
+      <p>{{ center.facilities_teaser.body }}</p>
+      <a class="text-link" href="{{ '/facilities/' | relative_url }}">View facilities</a>
+    </div>
+  </div>
+</section>
+
+<section class="section section--tint">
+  <div class="wrap">
+    <div class="section-heading section-heading--inline">
+      <div>
+        <p class="section-kicker">Latest Highlights</p>
+        <h2>News and research activity</h2>
+      </div>
+      <a href="{{ '/news/' | relative_url }}">View all news</a>
+    </div>
+    {% include news-list.html limit=3 %}
+  </div>
+</section>

@@ -1,0 +1,67 @@
+patents:
+  - title: Novel Soft Gripper with Neuromorphic Vision based Tactile Sensing
+    authors: Rajkumar Muthusamy, Omar Faris, Irfan Hussain, Yahya Hashem Zweiri, Dongming Gan, Lakmal Seneviratne
+    status: Submitted for filing
+    year: 2020
+    reference: KU file no. 2020-027
+  - title: A novel multi-purpose vision based system for high-precision industrial robotic machining
+    authors: Abdulla Ayyad, Rajkumar Muthusamy, Mohamad Abdul Mouti Halwani, Yahya Zweiri, Dongming Gan, Lakmal Seneviratne, Andre Dewald Swart
+    status: Submitted for filing
+    year: 2020
+    reference: KU file no. 2020-034
+  - title: A novel robot finger with an integrated event-based camera for finger-tip tactile sensing
+    authors: Rajkumar Muthusamy, Huda Alyammahi, Umer Shah, Yahya Zweiri, Lakmal Seneviratne, Dongming Gan
+    status: Submitted for filing
+    year: 2020
+    reference: KU file no. 2020-031
+  - title: Reconfigurable Walking Robot
+    authors: Bashar El-Khasawneh, Abdur Rosyid, Cesare Stefanini
+    status: U.S. Provisional Application
+    year: 2021
+    reference: KU2020-055-01
+publications:
+  - citation: >-
+      F. Renda, A. Mathew and D. F. Talegon, "Dynamics and Control of Soft Robots With Implicit Strain Parametrization," IEEE Robotics and Automation Letters, vol. 9, no. 3, pp. 2782-2789, March 2024.
+    doi: https://doi.org/10.1109/LRA.2024.3360813
+    theme: Theme 3
+    status: Published
+  - citation: >-
+      P. Pustina, C. D. Santina, F. Boyer, A. De Luca and F. Renda, "Input Decoupling of Lagrangian Systems via Coordinate Transformation," IEEE Transactions on Robotics, 2024.
+    doi: https://doi.org/10.1109/TRO.2024.3370089
+    theme: Theme 3
+    status: Published
+  - citation: >-
+      Z. Chen et al., "Data-Driven Methods Applied to Soft Robot Modeling and Control: A Review," IEEE Transactions on Automation Science and Engineering, 2024.
+    doi: https://doi.org/10.1109/TASE.2024.3377291
+    theme: Theme 3
+    status: Published
+  - citation: >-
+      Waseem Akram, Taimur Hassan, Hamed Toubar, Muhayyuddin Ahmed, Nikola Miskovic, Lakmal Seneviratne, and Irfan Hussain, "Aquaculture defects recognition via multi-scale semantic segmentation," Expert Systems with Applications 237, 2024.
+    theme: Theme 3
+    status: Published
+  - citation: >-
+      Bakht, A.B. et al., "MuLA-GAN: Multi-level attention GAN for enhanced underwater visibility," Ecological Informatics, 2024.
+    theme: Theme 3
+    status: Published
+  - citation: >-
+      Rehman, M.U. et al., "CN-BSRIQA: Cascaded network-blind super-resolution image quality assessment," Alexandria Engineering Journal, 2024.
+    theme: Theme 3
+    status: Published
+  - citation: >-
+      B. Hasanen, B. Suthar, Y. Zweiri, L. Seneviratne, I. Hussain, "Design of Twisted String Actuated Flexure Joint for Supernumerary Robotic Arm for Bi-manual Tasks," IEEE Sensors, 2024.
+    theme: Theme 4
+    status: Published
+  - citation: >-
+      M. Belal, M. Alsheikh, A. Aljarah, I. Hussain, "Deep Learning Approaches for Enhanced Lower-Limb Exoskeleton Control: A Review," IEEE Access, 2024.
+    theme: Theme 4
+    status: Published
+  - citation: >-
+      B. Suthar, M. Awad, I. Hussain, L. Seneviratne, Y. Zweiri, "Design of Robotic Finger Using Twisted String Actuator with Modular Passive Return Rotational Joints," Mechatronics, 2024.
+    doi: https://doi.org/10.1016/j.mechatronics.2024.103157
+    theme: Theme 4
+    status: Published
+  - citation: >-
+      A. Khan et al., "Tomato Maturity Recognition with Convolutional Transformers," Scientific Reports, 2024.
+    doi: https://doi.org/10.1038/s41598-023-50129-w
+    theme: Theme 4
+    status: Published

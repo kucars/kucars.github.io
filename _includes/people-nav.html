@@ -1,0 +1,10 @@
+<nav class="people-nav" aria-label="People sections">
+  {% assign group_keys = include.groups | split: "," %}
+  {% for group_key in group_keys %}
+    {% assign key = group_key | strip %}
+    {% assign group = site.data.people[key] %}
+    {% if group %}
+      <a href="#{{ key }}">{{ group.title }}</a>
+    {% endif %}
+  {% endfor %}
+</nav>

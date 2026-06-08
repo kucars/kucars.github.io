@@ -1,0 +1,33 @@
+<section class="content-block">
+  <h2>Selected Publications</h2>
+  <div class="publication-list">
+    {% for publication in site.data.publications.publications %}
+      <article class="publication">
+        <div class="publication-meta">
+          <span>{{ publication.theme }}</span>
+          <strong>{{ publication.status }}</strong>
+        </div>
+        <p>{{ publication.citation }}</p>
+        {% if publication.doi %}
+          <a href="{{ publication.doi }}">DOI</a>
+        {% endif %}
+      </article>
+    {% endfor %}
+  </div>
+</section>
+
+<section class="content-block">
+  <h2>Selected Patents</h2>
+  <div class="publication-list">
+    {% for patent in site.data.publications.patents %}
+      <article class="publication">
+        <div class="publication-meta">
+          <span>{{ patent.year }}</span>
+          <strong>{{ patent.status }}</strong>
+        </div>
+        <p><strong>{{ patent.title }}</strong><br>{{ patent.authors }}</p>
+        <small>{{ patent.reference }}</small>
+      </article>
+    {% endfor %}
+  </div>
+</section>

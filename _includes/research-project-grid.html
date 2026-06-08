@@ -1,0 +1,21 @@
+{% assign theme_slug = include.theme_slug | default: page.theme_slug %}
+{% assign theme_projects = site.projects | where: "theme", theme_slug | sort: "order" %}
+{% assign theme_projects = theme_projects | where_exp: "item", "item.type != 'partnership'" %}
+
+<div class="project-grid">
+  {% for project in theme_projects %}
+    <article class="project-card">
+      {% if project.images and project.images.size > 0 %}
+        <a class="project-card__image" href="{{ project.url | relative_url }}">
+          <img src="{{ project.images.first.src | relative_url }}" alt="" loading="lazy">
+        </a>
+      {% endif %}
+      <div class="project-card__body">
+        <h3><a href="{{ project.url | relative_url }}">{{ project.title }}</a></h3>
+        <p class="project-card__subtitle">{{ project.subtitle }}</p>
+        <p class="project-card__summary">{{ project.summary }}</p>
+        <a class="project-card__link" href="{{ project.url | relative_url }}">Read more</a>
+      </div>
+    </article>
+  {% endfor %}
+</div>

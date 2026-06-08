@@ -1,0 +1,29 @@
+<section class="content-block">
+  <h2>Partnership Model</h2>
+  <div class="approach-grid">
+    {% for item in site.data.sponsors.approach %}
+      <div class="approach-card">
+        <span>0{{ forloop.index }}</span>
+        <p>{{ item }}</p>
+      </div>
+    {% endfor %}
+  </div>
+</section>
+
+<section class="content-block">
+  <h2>Theme-Level Partnerships</h2>
+  <div class="partner-grid">
+    {% for theme in site.data.sponsors.themes %}
+      {% assign theme_url = '/research/' | append: theme.research_theme | append: '/' %}
+      <a class="partner-card" href="{{ theme_url | relative_url }}">
+        <h3>{{ theme.title }}</h3>
+        {% for partner in theme.partners %}
+          <div>
+            <strong>{{ partner.name }}</strong>
+            <p>{{ partner.summary }}</p>
+          </div>
+        {% endfor %}
+      </a>
+    {% endfor %}
+  </div>
+</section>

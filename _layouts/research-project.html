@@ -1,0 +1,131 @@
+---
+layout: default
+---
+{% assign theme_data = site.data.research.themes | where: "slug", page.theme | first %}
+{% assign theme_label = "Theme " | append: theme_data.theme_number %}
+
+<header class="page-hero page-hero--article">
+  <div class="wrap page-hero__inner">
+    {% include research-breadcrumb.html theme=page.theme project_title=page.title %}
+    <p class="eyebrow">{{ theme_data.short_title }}</p>
+    <h1>{{ page.title }}</h1>
+    <p class="lead">{{ page.subtitle }}</p>
+  </div>
+</header>
+
+<article class="section wrap research-layout">
+  <div class="research-layout__main prose">
+    {% if page.summary %}
+      <p class="lead">{{ page.summary }}</p>
+    {% endif %}
+
+    {% if page.video %}
+      <div class="research-video">
+        <iframe src="{{ page.video }}" title="{{ page.title }} video" loading="lazy" allowfullscreen></iframe>
+      </div>
+    {% endif %}
+
+    {{ content }}
+
+    {% if page.objectives %}
+      <h2>Objectives</h2>
+      <ul>
+        {% for objective in page.objectives %}
+          <li>{{ objective }}</li>
+        {% endfor %}
+      </ul>
+    {% endif %}
+
+    {% if page.images %}
+      <h2>Figures</h2>
+      <div class="research-gallery research-gallery--inline">
+        {% for image in page.images %}
+          <figure>
+            <img src="{{ image.src | relative_url }}" alt="{{ image.caption | default: page.title }}" loading="lazy">
+            {% if image.caption %}<figcaption>{{ image.caption }}</figcaption>{% endif %}
+          </figure>
+        {% endfor %}
+      </div>
+    {% endif %}
+
+    {% if theme_data.theme_number %}
+      {% assign related_pubs = site.data.publications.publications | where: "theme", theme_label %}
+      {% if related_pubs.size > 0 %}
+        <h2>Related Publications</h2>
+        <div class="research-related-pubs">
+          {% for pub in related_pubs limit: 5 %}
+            <div class="publication">
+              <p>{{ pub.citation }}</p>
+              {% if pub.doi %}<small><a href="{{ pub.doi }}" target="_blank" rel="noopener noreferrer">DOI</a></small>{% endif %}
+            </div>
+          {% endfor %}
+          <p><a href="{{ '/publications/' | relative_url }}">View all publications</a></p>
+        </div>
+      {% endif %}
+    {% endif %}
+  </div>
+
+  <aside class="research-layout__sidebar research-meta">
+    {% if page.team.pi %}
+      <section>
+        <h2>Principal Investigator</h2>
+        <p>
+          <strong>{{ page.team.pi.name }}</strong>
+          {% if page.team.pi.role %}<br><span>{{ page.team.pi.role }}</span>{% endif %}
+          {% if page.team.pi.dept %}<br><span>{{ page.team.pi.dept }}</span>{% endif %}
+          {% if page.team.pi.email %}<br><a href="mailto:{{ page.team.pi.email }}">{{ page.team.pi.email }}</a>{% endif %}
+        </p>
+      </section>
+    {% endif %}
+
+    {% if page.team.co_investigators %}
+      <section>
+        <h2>Co-Investigators</h2>
+        <ul>
+          {% for person in page.team.co_investigators %}
+            <li>
+              <strong>{{ person.name }}</strong>
+              {% if person.role %}<br><span>{{ person.role }}</span>{% endif %}
+              {% if person.dept %}<br><span>{{ person.dept }}</span>{% endif %}
+              {% if person.affiliation %}<br><span>{{ person.affiliation }}</span>{% endif %}
+              {% if person.email %}<br><a href="mailto:{{ person.email }}">{{ person.email }}</a>{% endif %}
+            </li>
+          {% endfor %}
+        </ul>
+      </section>
+    {% endif %}
+
+    {% if page.keywords %}
+      <section>
+        <h2>Keywords</h2>
+        <div class="research-chips">
+          {% for keyword in page.keywords %}
+            <span class="research-chip">{{ keyword }}</span>
+          {% endfor %}
+        </div>
+      </section>
+    {% endif %}
+
+    {% if page.sponsors %}
+      <section>
+        <h2>Sponsors</h2>
+        <div class="research-chips">
+          {% for sponsor in page.sponsors %}
+            <span class="research-chip">{{ sponsor }}</span>
+          {% endfor %}
+        </div>
+      </section>
+    {% endif %}
+
+    {% if page.collaborators %}
+      <section>
+        <h2>Collaborators</h2>
+        <div class="research-chips">
+          {% for collaborator in page.collaborators %}
+            <span class="research-chip">{{ collaborator }}</span>
+          {% endfor %}
+        </div>
+      </section>
+    {% endif %}
+  </aside>
+</article>

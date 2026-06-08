@@ -1,0 +1,33 @@
+name: KU Center for Autonomous Robotic Systems
+short_name: KUCARS
+university_name: Khalifa University
+kicker: Khalifa University Research Center
+logo: /assets/images/ku-logo.png
+logo_wordmark: /assets/images/ku-wordmark.png
+logo_full: /assets/images/ku-logo-full.png
+hero_image: /assets/images/kucars-hero.jpg
+facility_image: /assets/images/facilities/home-facilities.png
+news_default_image: /assets/images/news/default.jpg
+summary: AI-driven robotics research for autonomous cars, aerial systems, marine robotics, industrial manipulators, and intelligent systems that operate in complex real-world environments.
+research_direction:
+  kicker: Research Direction
+  heading: Robots that perceive, learn, reason, and act in the real world.
+  body: KUCARS advances autonomous robotic systems for transport, infrastructure inspection, ocean exploration, agriculture, and industrial manipulation. The center focuses on autonomy in unstructured environments, embodied AI, perception, prediction, planning, and safe physical interaction.
+facilities_teaser:
+  kicker: Facilities
+  heading: Laboratories built for fielded robotics.
+  body: KUCARS facilities support autonomous cars, marine robotics, computer vision, aerial robotics, manufacturing robotics, and industrial robotic manipulation.
+focus:
+  - Autonomous transport
+  - Infrastructure inspection
+  - Ocean exploration
+  - Desert agriculture
+metrics:
+  - value: 4
+    label: Embodied AI themes
+  - value: 6
+    label: Research facilities
+  - value: 80+
+    label: Researchers and students
+  - value: 15+
+    label: Partner institutions

@@ -1,0 +1,17 @@
+---
+layout: default
+---
+
+<header class="page-hero">
+  <div class="wrap page-hero__inner">
+    <p class="eyebrow">{{ site.data.center.short_name }}</p>
+    <h1>{{ page.title }}</h1>
+    {% if page.intro %}
+      <p>{{ page.intro }}</p>
+    {% endif %}
+  </div>
+</header>
+
+<article class="section wrap prose">
+  {{ content }}
+</article>

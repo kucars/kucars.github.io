@@ -1,0 +1,49 @@
+approach:
+  - Technical collaboration with industry partners to develop project objectives and requirements.
+  - Access to resources and test data needed to tailor projects to industry needs.
+  - Field testing in real-world settings to validate developed systems.
+  - Proposal development around user-driven challenges defined by industry partners.
+themes:
+  - title: Theme 1
+    research_theme: autonomous-vehicles
+    partners:
+      - name: Integrated Transport Center Abu Dhabi
+        summary: Collaboration through the KUCARS AV Lab and a proof-of-concept demonstration for L4 autonomy passenger mobility.
+      - name: Beijing Institute of Technology
+        summary: Team Fly Eagle participation in A2RL (Abu Dhabi Autonomous Racing League).
+      - name: Skoltech
+        summary: Collaboration on autonomous racing and robotics.
+  - title: Theme 2
+    research_theme: aerial-robotics
+    partners:
+      - name: Emirates Nuclear Energy Corporation
+        summary: UAV research for nuclear infrastructure inspection, subject to regulatory approvals.
+      - name: Abu Dhabi Police
+        summary: UAV concepts for crowd and traffic monitoring.
+      - name: UAE National Centre of Meteorology
+        summary: Drone testing and development for cloud seeding.
+      - name: Technology Innovation Institute
+        summary: Sponsored work on rover navigation solutions for the lunar surface.
+  - title: Theme 3
+    research_theme: marine-robotics
+    partners:
+      - name: Technology Innovation Institute
+        summary: Ongoing sponsored partnership on underwater swarm robotics.
+      - name: Stanford University
+        summary: Sponsored collaboration on marine robotics for sustainable ocean ecosystems.
+      - name: Beijing Institute of Technology
+        summary: Port security robotics collaboration and MBZIRC Team Fly Eagle participation.
+  - title: Theme 4
+    research_theme: industrial-robotics
+    partners:
+      - name: Silal
+        summary: Collaboration opportunities around desert agriculture and robotic farming.
+      - name: Strata
+        summary: Collaboration opportunities in manufacturing, inspection, and industrial robotics.
+external_sponsors:
+  - Strata
+  - Mubadala
+  - EMAAR
+  - RTA
+  - Earth
+  - PAL Robotics

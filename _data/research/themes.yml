@@ -1,0 +1,43 @@
+- slug: autonomous-vehicles
+  title: Autonomous Vehicles Lab
+  short_title: AVLab
+  order: 1
+  theme_number: 1
+  description: "Autonomous vehicle research for safe operation, smart urban ecosystems, passenger-centered mobility, V2X-enabled perception, and rigorous decision making under uncertainty."
+  focus_title: Research Focus
+  focus_intro: "We study safe autonomy under realistic uncertainty and deployment constraints, combining formal methods and real-world validation for safety-critical systems."
+  focus_areas:
+    - title: Decision-making
+      description: Formal analysis of autonomous decision pipelines, including failure modes, safety guarantees, and verification under uncertainty.
+    - title: Multi-agent coordination
+      description: Coordination and information sharing under uncertainty, including communication constraints and trust assumptions.
+    - title: Risk-bounded planning
+      description: Planning and control methods that explicitly encode risk, enabling safety guarantees rather than empirical tuning.
+  hero_image: /assets/images/research/autonomous-vehicles/avlab-msap-hero.png
+
+- slug: aerial-robotics
+  title: Aerial Robotics
+  short_title: UAV Systems
+  order: 2
+  theme_number: 2
+  description: "UAV research for surveillance, inspection, sense-and-avoid, GPS-denied navigation, and operations in critical infrastructure and extreme environments."
+  questions: []
+  hero_image: /assets/images/research/aerial-robotics/aerial-robotics-hero.png
+
+- slug: marine-robotics
+  title: Marine Robotics and Vision
+  short_title: VSAP Lab
+  order: 3
+  theme_number: 3
+  description: "Marine robotics research integrates underwater swarms, computer vision, multimodal AI, mapping, and monitoring for maritime safety and sustainability."
+  questions: []
+  hero_image: /assets/images/research/marine-robotics/marine-lab-hero.jpg
+
+- slug: industrial-robotics
+  title: Industrial Robotics and Manipulators
+  short_title: Manipulation
+  order: 4
+  theme_number: 4
+  description: "Robotic manipulation research covers industrial robotics, compliant mechanisms, greenhouse automation, and embodied intelligence for physical interaction."
+  questions: []
+  hero_image: /assets/images/research/industrial-robotics/industrial-robotics-hero.png

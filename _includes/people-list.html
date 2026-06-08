@@ -1,0 +1,37 @@
+{% assign selected_groups = include.groups | split: "," %}
+<div class="stack">
+  {% for group_key in selected_groups %}
+    {% assign key = group_key | strip %}
+    {% assign group = site.data.people[key] %}
+    {% if group %}
+      <section class="content-block" id="{{ key }}">
+        <div class="section-heading section-heading--inline">
+          <h2>{{ group.title }}</h2>
+          <span>{{ group.people.size }} people</span>
+        </div>
+        <div class="person-grid {% if include.compact %}person-grid--compact{% endif %}">
+          {% for person in group.people %}
+            <article class="person-card">
+              {% if person.photo %}
+                <img class="avatar avatar--photo" src="{{ person.photo | relative_url }}" alt="" width="44" height="44">
+              {% else %}
+                <div class="avatar" aria-hidden="true">{{ person.name | slice: 0 }}</div>
+              {% endif %}
+              <div>
+                <h3>
+                  {% if person.profile %}
+                    <a href="{{ person.profile }}" target="_blank" rel="noopener noreferrer">{{ person.name }}</a>
+                  {% else %}
+                    {{ person.name }}
+                  {% endif %}
+                </h3>
+                {% if person.role %}<p>{{ person.role }}</p>{% endif %}
+                {% if person.unit %}<small>{{ person.unit }}</small>{% endif %}
+              </div>
+            </article>
+          {% endfor %}
+        </div>
+      </section>
+    {% endif %}
+  {% endfor %}
+</div>

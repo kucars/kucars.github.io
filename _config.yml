@@ -1,0 +1,41 @@
+title: KU Center for Autonomous Robotic Systems
+short_title: KUCARS
+description: Research center site for AI-driven robotics, autonomy, and embodied intelligence.
+url: ""
+baseurl: ""
+
+markdown: kramdown
+permalink: pretty
+
+collections:
+  pages:
+    output: true
+    permalink: /:path/
+  news:
+    output: true
+    permalink: /news/:year/:month/:day/:title/
+  projects:
+    output: true
+    permalink: /research/projects/:name/
+
+defaults:
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: page
+  - scope:
+      path: ""
+      type: news
+    values:
+      layout: news
+  - scope:
+      path: ""
+      type: projects
+    values:
+      layout: research-project
+
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock

@@ -1,0 +1,25 @@
+---
+layout: default
+---
+
+<header class="page-hero page-hero--article">
+  <div class="wrap page-hero__inner">
+    {% assign display_source = page.source | default: site.data.center.short_name %}
+    {% if display_source == "Khalifa University" %}
+      {% assign display_source = site.data.center.short_name %}
+    {% endif %}
+    <p class="eyebrow">{{ display_source }}</p>
+    <h1>{{ page.title }}</h1>
+    <p>
+      {% if page.date %}{{ page.date | date: "%-d %B %Y" }}{% endif %}
+    </p>
+  </div>
+</header>
+
+<article class="section wrap prose article-content">
+  {% include news-image.html image=page.image %}
+  {% if page.summary %}
+    <p class="lead">{{ page.summary }}</p>
+  {% endif %}
+  {{ content }}
+</article>

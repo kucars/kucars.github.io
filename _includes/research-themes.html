@@ -1,0 +1,32 @@
+{% assign overview_mode = include.compact != true %}
+
+{% if overview_mode %}
+<nav class="theme-nav" aria-label="Research themes">
+  {% for theme in site.data.research.themes %}
+    <a href="{{ '/research/' | append: theme.slug | append: '/' | relative_url }}">{{ theme.title }}</a>
+  {% endfor %}
+</nav>
+{% endif %}
+
+<div class="theme-grid{% if include.compact %} theme-grid--compact{% else %} theme-grid--overview{% endif %}">
+  {% for theme in site.data.research.themes %}
+    {% assign theme_projects = site.projects | where: "theme", theme.slug %}
+    {% assign theme_projects = theme_projects | where_exp: "item", "item.type != 'partnership'" %}
+    <article class="theme-card" id="theme-{{ theme.order }}">
+      {% if overview_mode and theme.hero_image %}
+        <a class="theme-card__image" href="{{ '/research/' | append: theme.slug | append: '/' | relative_url }}">
+          <img src="{{ theme.hero_image | relative_url }}" alt="" loading="lazy">
+        </a>
+      {% endif %}
+      <div class="theme-card__number">0{{ theme.order }}</div>
+      <h3>
+        <a href="{{ '/research/' | append: theme.slug | append: '/' | relative_url }}">{{ theme.title }}</a>
+      </h3>
+      <p>{{ theme.description }}</p>
+      {% unless include.compact %}
+        <p class="theme-card__count">{{ theme_projects.size }} projects</p>
+        <a class="theme-card__cta" href="{{ '/research/' | append: theme.slug | append: '/' | relative_url }}">Explore theme</a>
+      {% endunless %}
+    </article>
+  {% endfor %}
+</div>

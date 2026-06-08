@@ -1,0 +1,17 @@
+<div class="facility-grid">
+  {% for facility in site.data.facilities %}
+    {% assign theme_url = '/research/' | append: facility.research_theme | append: '/' %}
+    <a class="facility-card" href="{{ theme_url | relative_url }}">
+      <img src="{{ facility.image | relative_url }}" alt="{{ facility.name }} facility">
+      <div class="facility-card__content">
+        <span class="facility-card__theme">{{ facility.theme }}</span>
+        <h3>{{ facility.name }}</h3>
+        <p>{{ facility.description }}</p>
+        <div class="facility-card__footer">
+          <p class="facility-card__location">{{ facility.location }}</p>
+          <span class="facility-card__link">Explore {{ facility.name }}</span>
+        </div>
+      </div>
+    </a>
+  {% endfor %}
+</div>

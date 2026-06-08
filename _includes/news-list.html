@@ -1,0 +1,24 @@
+{% assign news_items = site.news | sort: "date" | reverse %}
+{% if include.limit %}
+  {% assign news_items = news_items | slice: 0, include.limit %}
+{% endif %}
+<div class="news-grid">
+  {% for item in news_items %}
+    <article class="news-card">
+      {% include news-image.html image=item.image link=item.url %}
+      <div class="news-card__body">
+        <span>
+          {% assign display_source = item.source | default: site.data.center.short_name %}
+          {% if display_source == "Khalifa University" %}
+            {% assign display_source = site.data.center.short_name %}
+          {% endif %}
+          {{ display_source }}
+          {% if item.date %} / {{ item.date | date: "%b %-d, %Y" }}{% endif %}
+        </span>
+        <h3><a href="{{ item.url | relative_url }}">{{ item.title }}</a></h3>
+        <p>{{ item.summary }}</p>
+        <a href="{{ item.url | relative_url }}">Read more</a>
+      </div>
+    </article>
+  {% endfor %}
+</div>

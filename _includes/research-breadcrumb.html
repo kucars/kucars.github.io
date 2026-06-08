@@ -1,0 +1,20 @@
+{% assign crumb_theme = include.theme %}
+{% if crumb_theme == nil and page.theme %}
+  {% assign crumb_theme = page.theme %}
+{% endif %}
+{% if crumb_theme == nil and page.theme_slug %}
+  {% assign crumb_theme = page.theme_slug %}
+{% endif %}
+{% assign theme_data = site.data.research.themes | where: "slug", crumb_theme | first %}
+
+<nav class="research-breadcrumb" aria-label="Breadcrumb">
+  <a href="{{ '/research/' | relative_url }}">Research</a>
+  {% if theme_data %}
+    <span aria-hidden="true">/</span>
+    <a href="{{ '/research/' | append: theme_data.slug | append: '/' | relative_url }}">{{ theme_data.title }}</a>
+  {% endif %}
+  {% if include.project_title %}
+    <span aria-hidden="true">/</span>
+    <span>{{ include.project_title }}</span>
+  {% endif %}
+</nav>

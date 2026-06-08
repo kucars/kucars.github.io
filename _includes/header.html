@@ -1,0 +1,28 @@
+<header class="site-header">
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <div class="wrap site-header__inner">
+    <a class="brand" href="{{ '/' | relative_url }}" aria-label="{{ site.title }} home">
+      <img
+        class="brand__mark"
+        src="{{ site.data.center.logo | relative_url }}"
+        alt=""
+        width="80"
+        height="80"
+        decoding="async"
+        aria-hidden="true"
+      >
+      <span class="brand__text">
+        <span class="brand__university">{{ site.data.center.university_name }}</span>
+        <span class="brand__subtitle brand__subtitle--full">{{ site.data.center.name | replace: "KU ", "" }} — {{ site.data.center.short_name }}</span>
+        <span class="brand__subtitle brand__subtitle--short">{{ site.data.center.short_name }}</span>
+      </span>
+    </a>
+    <input type="checkbox" id="nav-toggle" class="nav-toggle">
+    <label for="nav-toggle" class="nav-toggle-btn" aria-label="Open menu"></label>
+    <nav class="nav" aria-label="Main navigation">
+      {% for item in site.data.navigation %}
+        <a href="{{ item.url | relative_url }}" {% if page.url == item.url %}aria-current="page"{% endif %}>{{ item.title }}</a>
+      {% endfor %}
+    </nav>
+  </div>
+</header>
