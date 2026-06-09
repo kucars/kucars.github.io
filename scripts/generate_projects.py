@@ -123,7 +123,7 @@ Legged robots overcome limitations of wheeled platforms on rough terrain and in 
             ],
         },
         "collaborators": ["Silal", "Abu Dhabi Police"],
-        "images": ["/assets/images/research/aerial-robotics/ariel-fig3.png"],
+        "images": ["/assets/images/research/aerial-robotics/surveillance-inspection-hero.png"],
         "body": """This project provides aerial drone-based solutions for surveillance and inspection in security and agriculture. Research efforts focus on monitoring uniform-appearance crowds and scenes, and regular inspection with early detection of plant disease.""",
     },
     {

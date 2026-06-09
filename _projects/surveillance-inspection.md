@@ -16,7 +16,8 @@ collaborators:
   - Silal
   - Abu Dhabi Police
 images:
-  - src: /assets/images/research/aerial-robotics/ariel-fig3.png
+  - src: /assets/images/research/aerial-robotics/surveillance-inspection-hero.png
+    caption: Underwater vehicle for surveillance and inspection applications
 ---
 
 This project provides aerial drone-based solutions for surveillance and inspection in security and agriculture. Research efforts focus on monitoring uniform-appearance crowds and scenes, and regular inspection with early detection of plant disease.

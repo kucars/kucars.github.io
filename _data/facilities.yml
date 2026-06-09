@@ -4,7 +4,7 @@
   research_theme: marine-robotics
   description: Marine Studies and Research Lab with wave generation, flow current, and controlled underwater testing for autonomous marine systems.
   image: /assets/images/research/marine-robotics/marine-lab-hero.jpg
-- name: Autonomous Cars
+- name: Autonomous Vehicles Lab
   location: B02033 Main Campus and KU SAN Campus Wind Tunnel Building 
   theme: Theme 1 Lab
   research_theme: autonomous-vehicles
@@ -12,8 +12,8 @@
   image: /assets/images/research/autonomous-vehicles/avlab-msap-hero.png
 - name: Computer Vision
   location: L03029
-  theme: Theme 1 Lab
-  research_theme: autonomous-vehicles
+  theme: Theme 3 Lab
+  research_theme: marine-robotics
   description: Vision and perception research supporting robotic autonomy and inspection.
   image: /assets/images/facilities/computer-vision.png
 - name: Aerial Robotics
