@@ -3,19 +3,13 @@
   <div class="wrap site-header__inner">
     <a class="brand" href="{{ '/' | relative_url }}" aria-label="{{ site.title }} home">
       <img
-        class="brand__mark"
-        src="{{ site.data.center.logo | relative_url }}"
-        alt=""
-        width="80"
-        height="80"
+        class="brand__logo"
+        src="{{ site.data.center.banner_logo | relative_url }}"
+        alt="{{ site.data.center.university_name }} — {{ site.data.center.name | replace: 'KU ', '' }}"
+        width="326"
+        height="130"
         decoding="async"
-        aria-hidden="true"
       >
-      <span class="brand__text">
-        <span class="brand__university">{{ site.data.center.university_name }}</span>
-        <span class="brand__subtitle brand__subtitle--full">{{ site.data.center.name | replace: "KU ", "" }} — {{ site.data.center.short_name }}</span>
-        <span class="brand__subtitle brand__subtitle--short">{{ site.data.center.short_name }}</span>
-      </span>
     </a>
     <input type="checkbox" id="nav-toggle" class="nav-toggle">
     <label for="nav-toggle" class="nav-toggle-btn" aria-label="Open menu"></label>

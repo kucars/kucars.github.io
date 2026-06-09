@@ -6,13 +6,24 @@ layout: default
 
 <section class="hero">
   {% include hero-banner.html %}
-  {% assign title_words = center.name | split: ' ' %}
-  <div class="hero__content wrap" style="--word-count: {{ title_words.size }}">
+  {% if center.hero_heading %}
+    {% assign hero_word_count = center.hero_heading.size %}
+  {% else %}
+    {% assign title_words = center.name | split: ' ' %}
+    {% assign hero_word_count = title_words.size %}
+  {% endif %}
+  <div class="hero__content wrap" style="--word-count: {{ hero_word_count }}">
     <p class="eyebrow hero__reveal">{{ center.kicker }}</p>
-    <h1 class="hero__title" aria-label="{{ center.name }}">
-      {% for word in title_words %}
-        <span class="hero__word" style="--word-index: {{ forloop.index0 }}">{{ word }}</span>
-      {% endfor %}
+    <h1 class="hero__title{% if center.hero_heading %} hero__title--stacked{% endif %}" aria-label="{{ center.name }}">
+      {% if center.hero_heading %}
+        {% for line in center.hero_heading %}
+          <span class="hero__line hero__word" style="--word-index: {{ forloop.index0 }}">{{ line }}</span>
+        {% endfor %}
+      {% else %}
+        {% for word in title_words %}
+          <span class="hero__word" style="--word-index: {{ forloop.index0 }}">{{ word }}</span>
+        {% endfor %}
+      {% endif %}
     </h1>
     <p class="hero__summary hero__reveal">{{ center.summary }}</p>
     <div class="hero__actions hero__reveal">

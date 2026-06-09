@@ -2,7 +2,11 @@ name: KU Center for Autonomous Robotic Systems
 short_name: KUCARS
 university_name: Khalifa University
 kicker: Khalifa University Research Center
+hero_heading:
+  - Center for Autonomous
+  - Robotic Systems
 logo: /assets/images/ku-logo.png
+banner_logo: /assets/images/kucars-banner-logo-header.jpg
 logo_wordmark: /assets/images/ku-wordmark.png
 logo_full: /assets/images/ku-logo-full.png
 hero_image: /assets/images/kucars-hero.jpg
