@@ -1581,7 +1581,6 @@ a:focus-visible,
   height: 36px;
   object-fit: contain;
   flex-shrink: 0;
-  opacity: 0.9;
 }
 
 .site-footer strong {
